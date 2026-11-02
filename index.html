@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel and Tourism Portal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="announcement">
+    <span>Special Offer: Get 10% off when you book for 5 or more travelers!</span>
+    <button id="closeAnnouncement">X</button>
+</div>
+
+<header>
+    <h1>Travel and Tourism Portal</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#destinations">Destinations</a>
+      <a href="#packages">Packages</a>
+        <a href="#booking">Booking</a>
+        <a href="#feedback">Feedback</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <h2>Explore India with Us</h2>
+    <p>Choose your destination, pick a package and book your trip in a few simple steps.</p>
+    <a href="#booking" class="button">Book Now</a>
+</section>
+
+<section id="why">
+    <h2>Why Choose Us</h2>
+    <div class="why-container">
+        <div class="why-box">
+            <h3>Best Prices</h3>
+            <p>Affordable packages for students, families and groups.</p>
+        </div>
+        <div class="why-box">
+            <h3>Trusted Guides</h3>
+            <p>Local guides who know every place very well.</p>
+        </div>
+        <div class="why-box">
+            <h3>24/7 Support</h3>
+            <p>We are available anytime during your trip.</p>
+        </div>
+    </div>
+</section>
+
+<section id="destinations">
+    <h2>Popular Destinations</h2>
+
+    <div class="filter-bar">
+        <button class="filter-btn active" data-type="all">All</button>
+      <button class="filter-btn" data-type="beach">Beach</button>
+      <button class="filter-btn" data-type="mountain">Mountain</button>
+        <button class="filter-btn" data-type="heritage">Heritage</button>
+        <button class="filter-btn" data-type="nature">Nature</button>
+    </div>
+
+    <div class="card-container">
+
+        <div class="card dest-card" data-type="beach">
+            <div class="card-img goa-img"></div>
+     <div class="card-body">
+                <h3>Goa</h3>
+                <p>Beaches, nightlife and water sports.</p>
+     <p><b>Attractions:</b> Baga Beach, Fort Aguada, Dudhsagar Falls</p>
+                <p><b>Duration:</b> 4 Days</p>
+                <p><b>Price:</b> Rs. 12000 per person</p>
+                <button class="book-btn" data-price="12000">Book Now</button>
+            </div>
+        </div>
+
+        <div class="card dest-card" data-type="mountain">
+            <div class="card-img manali-img"></div>
+            <div class="card-body">
+                <h3>Manali</h3>
+                <p>Snow mountains and adventure activities.</p>
+                <p><b>Attractions:</b> Solang Valley, Rohtang Pass, Hadimba Temple</p>
+                <p><b>Duration:</b> 5 Days</p>
+                <p><b>Price:</b> Rs. 15000 per person</p>
+                <button class="book-btn" data-price="15000">Book Now</button>
+            </div>
+        </div>
+
+        <div class="card dest-card" data-type="heritage">
+            <div class="card-img jaipur-img"></div>
+            <div class="card-body">
+                <h3>Jaipur</h3>
+                <p>The pink city full of forts and palaces.</p>
+                <p><b>Attractions:</b> Amber Fort, Hawa Mahal, City Palace</p>
+                <p><b>Duration:</b> 3 Days</p>
+                <p><b>Price:</b> Rs. 9000 per person</p>
+                <button class="book-btn" data-price="9000">Book Now</button>
+            </div>
+        </div>
+
+        <div class="card dest-card" data-type="nature">
+            <div class="card-img kerala-img"></div>
+            <div class="card-body">
+                <h3>Kerala</h3>
+                <p>Backwaters, greenery and peaceful villages.</p>
+                <p><b>Attractions:</b> Alleppey Houseboat, Munnar Tea Gardens, Kovalam Beach</p>
+                <p><b>Duration:</b> 6 Days</p>
+                <p><b>Price:</b> Rs. 18000 per person</p>
+                <button class="book-btn" data-price="18000">Book Now</button>
+            </div>
+        </div>
+
+        <div class="card dest-card" data-type="heritage">
+            <div class="card-img udaipur-img"></div>
+            <div class="card-body">
+                <h3>Udaipur</h3>
+                <p>The city of lakes with royal palaces.</p>
+                <p><b>Attractions:</b> City Palace, Lake Pichola, Saheliyon Ki Bari</p>
+                <p><b>Duration:</b> 3 Days</p>
+                <p><b>Price:</b> Rs. 10500 per person</p>
+                <button class="book-btn" data-price="10500">Book Now</button>
+            </div>
+        </div>
+
+        <div class="card dest-card" data-type="beach">
+            <div class="card-img andaman-img"></div>
+            <div class="card-body">
+                <h3>Andaman</h3>
+                <p>Clear blue water and white sand beaches.</p>
+                <p><b>Attractions:</b> Radhanagar Beach, Cellular Jail, Scuba Diving</p>
+                <p><b>Duration:</b> 6 Days</p>
+                <p><b>Price:</b> Rs. 22000 per person</p>
+                <button class="book-btn" data-price="22000">Book Now</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="packages">
+    <h2>Travel Packages</h2>
+    <table>
+        <tr>
+            <th>Destination</th>
+            <th>Duration</th>
+            <th>Price per Person</th>
+            <th>Facilities</th>
+        </tr>
+        <tr>
+            <td>Goa</td>
+            <td>4 Days</td>
+            <td>Rs. 12000</td>
+            <td>Hotel, Breakfast, Sightseeing</td>
+        </tr>
+        <tr>
+            <td>Manali</td>
+            <td>5 Days</td>
+            <td>Rs. 15000</td>
+            <td>Hotel, All Meals, Cab, Guide</td>
+        </tr>
+        <tr>
+            <td>Jaipur</td>
+            <td>3 Days</td>
+            <td>Rs. 9000</td>
+            <td>Hotel, Breakfast, Local Cab</td>
+        </tr>
+        <tr>
+            <td>Kerala</td>
+            <td>6 Days</td>
+            <td>Rs. 18000</td>
+            <td>Hotel, Houseboat Stay, All Meals, Guide</td>
+        </tr>
+        <tr>
+            <td>Udaipur</td>
+            <td>3 Days</td>
+            <td>Rs. 10500</td>
+            <td>Hotel, Breakfast, Boat Ride, Cab</td>
+        </tr>
+        <tr>
+            <td>Andaman</td>
+            <td>6 Days</td>
+            <td>Rs. 22000</td>
+            <td>Hotel, All Meals, Ferry, Scuba Diving</td>
+        </tr>
+    </table>
+</section>
+
+<section id="booking">
+    <h2>Booking / Enquiry Form</h2>
+
+    <form id="bookingForm">
+        <label>Full Name</label>
+        <input type="text" id="name">
+
+        <label>Email</label>
+        <input type="text" id="email">
+
+        <label>Phone Number</label>
+        <input type="text" id="phone">
+
+        <label>Destination</label>
+        <select id="destination">
+            <option value="">-- Select Destination --</option>
+            <option value="12000">Goa</option>
+            <option value="15000">Manali</option>
+            <option value="9000">Jaipur</option>
+            <option value="18000">Kerala</option>
+            <option value="10500">Udaipur</option>
+            <option value="22000">Andaman</option>
+        </select>
+
+        <label>Travel Date</label>
+        <input type="date" id="date">
+
+        <label>Number of Travelers</label>
+        <input type="number" id="travelers" value="1">
+
+        <label>Message (optional)</label>
+        <textarea id="message" rows="3"></textarea>
+
+        <div id="costBox">
+            <p>Base Cost: Rs. <span id="baseCost">0</span></p>
+            <p>Group Discount: Rs. <span id="discount">0</span></p>
+            <p class="total">Total Cost: Rs. <span id="totalCost">0</span></p>
+        </div>
+
+        <button type="submit">Submit Booking</button>
+        <button type="button" id="resetBtn">Reset</button>
+    </form>
+
+    <div id="errorBox"></div>
+
+    <div id="summary">
+        <h3>Booking Summary</h3>
+        <p>Name: <span id="sName"></span></p>
+        <p>Email: <span id="sEmail"></span></p>
+        <p>Phone: <span id="sPhone"></span></p>
+        <p>Destination: <span id="sDestination"></span></p>
+        <p>Travel Date: <span id="sDate"></span></p>
+        <p>Travelers: <span id="sTravelers"></span></p>
+        <p>Discount: Rs. <span id="sDiscount"></span></p>
+        <p>Total Cost: Rs. <span id="sTotal"></span></p>
+        <p class="success">Thank you! Your booking request has been received.</p>
+    </div>
+</section>
+
+<section id="feedback">
+    <h2>Customer Feedback</h2>
+
+    <div id="reviewList">
+        <div class="review">
+            <h4>Rahul Sharma - 5/5</h4>
+            <p>Our Goa trip was amazing. The hotel and food were very good.</p>
+        </div>
+        <div class="review">
+            <h4>Priya Singh - 4/5</h4>
+            <p>Manali package was worth the price. The guide was very helpful.</p>
+        </div>
+    </div>
+
+    <form id="feedbackForm">
+        <h3>Share Your Experience</h3>
+        <label>Your Name</label>
+        <input type="text" id="fbName">
+
+        <label>Rating</label>
+        <select id="fbRating">
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Poor</option>
+            <option value="1">1 - Very Poor</option>
+        </select>
+
+        <label>Comment</label>
+        <textarea id="fbComment" rows="3"></textarea>
+
+        <p id="feedbackMsg"></p>
+        <button type="submit">Add Feedback</button>
+    </form>
+</section>
+
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <div class="question">How can I book a package?</div>
+        <div class="answer">Fill the booking form above and submit it. You will see your booking summary on the page.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">Can I cancel my booking?</div>
+        <div class="answer">Yes, you can cancel up to 7 days before the travel date.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">Are meals included in the package?</div>
+        <div class="answer">It depends on the package. Please check the facilities column in the packages table.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">What is the maximum number of travelers?</div>
+        <div class="answer">You can book for up to 10 travelers in one booking.</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="question">Is there any group discount?</div>
+        <div class="answer">Yes, you get 10% off if you book for 5 or more travelers.</div>
+    </div>
+</section>
+
+<footer>
+    <p>Travel and Tourism Portal | MSE-2 Project</p>
+</footer>
+
+<button id="topBtn">Top</button>
+
+<script src="script.js"></script>
+</body>
+</html>
